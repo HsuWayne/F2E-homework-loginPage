@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap');
+/*** global ***/
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+body {
+  font-family: 'Roboto', 'Montserrat', Arial, serif;
+}
+
+/*** component ***/
+.main-bg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+.btn {
+  height: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  border: 1px solid #d7d7d7;
+  margin: 9px;
+  color: #000;
+  font-size: 16px;
+}
+.btn-primary {
+  border: none;
+  margin: 9px;
+  color: #ffffff;
+  background-color: #1877f2;
+  font-size: 18px;
+}
+
+/** navbar **/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #b6b6b6;
+  background-color: #ffffff;
+}
+.navbar .nav_group {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo {
+  margin: 10px 20px;
+}
+.navbar .menu {
+  margin: 0px 12px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+.navbar .icon {
+  margin: 10px 20px;
+}
+
+/** main **/
+.main {
+  flex-grow: 1; /* 佔滿navbar以外剩餘高度 */
+}
+/* login page */
+.loginPage {
+  width: 600px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #b6b6b6;
+  border-radius: 1%;
+  background-color: #ffffff;
+}
+.loginPage .btn_close {
+  align-self: flex-end;
+  margin: 12px;
+}
+.loginPage .title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 36px;
+}
+.loginPage .btn_group {
+  display: flex;
+}
+.loginPage .btn {
+  width: 135px;
+}
+.loginPage .icon {
+  margin: 5px;
+}
+.loginPage .divide {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.loginPage .divide::before,
+.loginPage .divide::after {
+  margin: 9px;
+  content: '';
+  width: 100px;
+  border: 0.5px solid #dde2e5;
+}
+.loginPage .input_group {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 24px;
+}
+.loginPage .label {
+  font-size: 16px;
+}
+.loginPage sup {
+  color: #ff4d4f;
+}
+.loginPage .input {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: 1px solid #dde2e5;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.loginPage .btn-primary {
+  width: 50%;
+  margin: 25px;
+}
